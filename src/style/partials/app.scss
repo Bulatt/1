@@ -351,11 +351,26 @@ header{
       }
   }
 
+  .carousel {
+
+  }
+
+  .viewport-car {
+    width: 720px;
+    overflow: hidden;
+    position: relative;
+    min-height: 490px;
+
+  }
+
   .blocks {
-    float: left;
-    list-style: none;
-    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
     margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: 490px;
 
     li {
       width: 230px;
