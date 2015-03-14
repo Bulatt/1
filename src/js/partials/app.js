@@ -44,8 +44,10 @@ var slideWidth=1266;
     var carWidth=240;
     var visibleSlide = 3;
     var blockMargin = 10;
+
     function makeSlider (a) {
-        $el = a;
+        var el;
+        $el = $(a);
         $(function(){
         $el.find('.blocks').width($el.find('.blocks').children().size()*carWidth);
 
@@ -65,7 +67,7 @@ var slideWidth=1266;
             if(currentSlide>=visibleSlide)
             {
                 $el.find('.blocks').css('left',-(currentSlide-2)*carWidth+blockMargin);
-                $el.find('.blocks').append(el.find$('.blocks').children().first().clone());
+                $el.find('.blocks').append($el.find('.blocks').children().first().clone());
                 $el.find('.blocks').children().first().remove();
                 currentSlide--;
             }
@@ -85,6 +87,6 @@ var slideWidth=1266;
             $el.find('.blocks').animate({left: -currentSlide*carWidth},300).data('current',currentSlide);
         }
     }
-    makeSlider('#carousel1');
+     makeSlider('#carousel1');
     makeSlider('#carousel2');
 });

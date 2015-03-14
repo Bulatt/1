@@ -507,7 +507,21 @@ header{
 
 .footer-wrap {
   width: 960px;
-  margin: 0 auto;
+  margin: 40px auto 110px;
   padding: 0 5px;
+  text-align: right;
 
+    h3 {
+      color: $color-h2-content;
+      margin-bottom: 20px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    p {
+      float: right;
+      width: 550px;
+      color: #bebebe;
+      line-height: 20px;
+    }
 }
