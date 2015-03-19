@@ -45,7 +45,7 @@ var slideWidth=1266;
     var visibleSlide = 3;
     var blockMargin = 10;
 
-
+// Исправить функцию карусели
     function makeSlider () {
         var el;
         $el = $('#carousel1');
